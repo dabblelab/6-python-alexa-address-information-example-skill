@@ -1,0 +1,30 @@
+{
+    "SKILL_NAME": "the Dabble Lab address information template",
+    "WELCOME": [
+      "Welcome to {}. You can say: what is my location, to hear the address associated with this device."
+    ],
+    "WELCOME_REPROMPT": [
+      "Say: what is my location, to hear the address associated with this device."
+    ],
+    "HELP": [
+      "Try asking me for your address."
+    ],
+    "HELP_REPROMPT": [
+      "You can ask me about your address to confirm if I can access it."
+    ],
+    "FALLBACK": [
+      "Sorry, I didn't understand that. You can say: what is my location, to hear the address associated with this device."
+    ],
+    "FALLBACK_REPROMPT": [
+      "You can say: what is my location, to hear the address associated with this device."
+    ],
+    "CANCEL_STOP_RESPONSE": [
+      "Goodbye!"
+    ],
+    "NOTIFY_MISSING_PERMISSIONS": "Please enable device location permissions in the Amazon Alexa app.",
+    "NO_ADDRESS": "It looks like you don't have an address set. You can set your address from the Alexa companion app.",
+    "ADDRESS_AVAILABLE": "Here is your full address: {}, {}, {}",
+    "LOCATION_FAILURE": "There was an error with the Device Address API. Please try again.",
+    "ERROR": "Sorry, I wasn't able to handle your last request. Could you say that again?",
+    "ERROR_REPROMPT": "Could you say that again?"
+}
