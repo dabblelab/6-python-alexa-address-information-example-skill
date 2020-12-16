@@ -63,6 +63,8 @@ class DeviceLocationIntentHandler(AbstractRequestHandler):
             device_addr_client = handler_input.service_client_factory.get_device_address_service()
             addr = device_addr_client.get_full_address(device_id)
 
+            if addr is None:
+                handler_input.response_builder.speak(language_prompts["NO_ADDRESS"])
             if addr.address_line1 is None and addr.state_or_region is None:
                 handler_input.response_builder.speak(language_prompts["NO_ADDRESS"])
             else:
