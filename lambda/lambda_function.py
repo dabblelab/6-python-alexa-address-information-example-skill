@@ -65,7 +65,7 @@ class DeviceLocationIntentHandler(AbstractRequestHandler):
 
             if addr is None:
                 handler_input.response_builder.speak(language_prompts["NO_ADDRESS"])
-            if addr.address_line1 is None and addr.state_or_region is None:
+            elif addr.address_line1 is None and addr.state_or_region is None:
                 handler_input.response_builder.speak(language_prompts["NO_ADDRESS"])
             else:
                 handler_input.response_builder.speak(language_prompts["ADDRESS_AVAILABLE"].format(
